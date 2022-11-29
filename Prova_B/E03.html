@@ -6,11 +6,21 @@
     */
 
     //Entrada
-
-
+let porquinhos = 15;
+let macho = 0;
+let femea = 0; 
+let genero
     //Processamento
-
+for(let contador = 0;contador < porquinhos;contador++){
+     genero = prompt("digite M-para macho e F-para fêmea:").toUpperCase();
+     if(genero == "M"){
+    macho++
+}
+else{
+    femea++
+}
+}
 
     //Saída
-
+document.write(`machos:${macho}<br/> fêmea:${femea}`)
 </script>

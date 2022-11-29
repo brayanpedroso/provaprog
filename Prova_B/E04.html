@@ -7,11 +7,16 @@
     */
 
     //Entrada
-
-
+let qtAlunos = Number(prompt("digite a quantidade de alunos que estiveram no refeitoria buscando bolachas:"));
+let bolachas;
+let bolachasConsumidas = 0;
     //Processamento
-
+for(let contador = 1;contador <=qtAlunos;contador++){
+bolachas = Number(prompt("digite quantas bolachas o aluno pegou:"))
+bolachasConsumidas = bolachasConsumidas + bolachas;
+}
+let media = bolachasConsumidas / qtAlunos;
 
     //Saída
-
+document.write(`total de bolachas consumidas: ${bolachasConsumidas}<br/> média de bolachas consumidas pelos alunos: ${media}`)
 </script>

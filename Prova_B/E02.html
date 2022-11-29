@@ -9,11 +9,23 @@
     */
 
     //Entrada
-
+let malas = Number(prompt("digite a quantidade de malas:"))
+let peso=0;
+let pesoTotal=0;
 
     //Processamento
+for(let contador =1;contador <=malas;contador++){
+peso = Number(prompt("digite o peso de cada mala"))
+pesoTotal = pesoTotal + peso;
+}
+if(pesoTotal < 200){
+    document.write("a viagem pode ser realizada!")
+}
 
-
+else{
+    let pesoRetirar = pesoTotal - 200
+    document.write(`a viagem não podera ser realizada retire: ${pesoRetirar} da mala!`)
+}
     //Saída
 
 </script>

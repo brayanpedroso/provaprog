@@ -7,11 +7,23 @@
     */
 
     //Entrada
-
+let qtAvaliaçoes = Number(prompt("digite a quantidade de avaliaçoes que realizou com o aluno joão:"));
+let notas;
+let nota1 = 0;
 
     //Processamento
-
-
+for(let controle = 1;controle <= qtAvaliaçoes;controle++){
+    notas = Number(prompt(`digite a nota 1 de: ${qtAvaliaçoes}`));
+    nota1 = notas + nota1;
+}
+ let media = nota1 / qtAvaliaçoes
+ if(media >= 7){
+        document.write("o aluno foi aprovado!")
+    }
+    else{
+        document.write("o aluno foi reprovado!")
+    }
     //Saída
+    
 
 </script>
